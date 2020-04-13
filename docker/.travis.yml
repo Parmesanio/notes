@@ -1,0 +1,12 @@
+# language: generic if "rakefile not found" error
+# Need super level permissions to execute build
+sudo: required
+# Install services
+services:
+    - docker
+# Execute commands before tests are ran
+before_install:
+    - docker build -t seanparmesan/docker -f Dockerfile.dev .
+
+script:
+    - docker run -e CI=true seanparmesan/docker npm run test

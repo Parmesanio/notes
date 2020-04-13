@@ -2,7 +2,7 @@
 FROM node:alpine
 
 # Specify working directory in container
-WORKDIR '/app';
+WORKDIR '/app'
 
 # Copy package.json if any changes are made to it
 COPY ./package.json .

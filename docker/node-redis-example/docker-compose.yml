@@ -1,0 +1,11 @@
+version: '3'
+# What type of container(s)
+services:
+    redis-server:
+        image: 'redis'
+    node-app:
+        build: .
+        ports:
+            # dash means array 
+            - "3000:4000"
+            - "3001:4000"

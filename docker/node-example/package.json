@@ -1,0 +1,11 @@
+{
+    "dependencies": {
+        "express": "*"
+    },
+    "scripts": {
+        "start": "nodemon server"
+    },
+    "devDependencies": {
+        "nodemon": "*"
+    }
+}
